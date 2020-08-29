@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Wish</title>
+    <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Satisfy', cursive;
+        }
+
+        .main-area {
+            height: 100vh;
+            width: 100vw;
+            background-color: hsl(0, 0%, 94%);
+            display: grid;
+            place-items: center;
+        }
+
+        .container p {
+            font-size: 5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            text-shadow: 0 0 2rem rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-area">
+        <div class="container">
+            <p>Happiest Birthday 🎂🎂</p>
+            <p>May God Bless You 🙏🏻</p>
+        </div>
+    </div>
+    <script src="./confetti.js"></script>
+    <script src="./script.js"></script>
+    <script>
+        const startit = () => {
+            setTimeout(function () {
+                confetti.start();
+            }, 1000);
+        }
+
+        const stopit = () => {
+            setTimeout(function () {
+                confetti.stop();
+            }, 55000);
+        }
+
+        startit();
+        stopit();
+    </script>
+</body>
+
+</html>
